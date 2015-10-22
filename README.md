@@ -1,2 +1,2 @@
-# Sigurthor
+# Sigurthor og Davíð
 Readme
