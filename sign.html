@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html ng-app="app">
+	<head>
+		<title>Íslensk sjónvarpsdagskrá - Skráning</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="app-content/app.css" rel="stylesheet" />
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+
+	<!-- Header -->
+		<div id="header">
+			<div id="nav-wrapper">
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Heim</a></li>
+						<li><a href="stodvar.html">Stöðvar</a></li>
+						<li><a href="about.html">Um okkur</a></li>
+						<li class="active"><a href="sign.html">Innskráning/Nýskráning</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">Skráning</a></h1>
+				</div>
+			</div>
+		</div>
+	<!-- Header -->
+
+	<!-- Main -->
+	<div class="jumbotron">
+			<div class="container">
+					<div class="col-sm-8 col-sm-offset-2">
+							<div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+							<div ng-view></div>
+					</div>
+			</div>
+	</div>
+
+	<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="//code.angularjs.org/1.2.20/angular.js"></script>
+	<script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
+	<script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
+
+	<script src="app.js"></script>
+	<script src="app-services/authentication.service.js"></script>
+	<script src="app-services/flash.service.js"></script>
+
+	<!-- Real user service that uses an api -->
+	<!-- <script src="app-services/user.service.js"></script> -->
+
+	<!-- Fake user service for demo that uses local storage -->
+	<script src="app-services/user.service.local-storage.js"></script>
+
+	<script src="home/home.controller.js"></script>
+	<script src="login/login.controller.js"></script>
+	<script src="register/register.controller.js"></script>
+
+	</body>
+</html>
