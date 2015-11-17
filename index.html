@@ -14,7 +14,7 @@
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">ng-login</a>
+				<a class="navbar-brand" href="#">Islensk Sjonvarpsdagskra</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,6 +25,7 @@
 					<li ng-class="getClass('adminState')"><a ui-sref="adminState">Admin Area</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+					<li><a>{{ currentUser.username }}</a></li>
 					<li><a href="#" ng-click="logout()">Log Out</a></li>
 				</ul>
 			</div>
@@ -34,7 +35,7 @@
 	</nav>
 
 	<div class="container">
-		<div ng-if="currentUser"><b>Welcome, {{ currentUser.username }}</b></div>
+		<!-- <div ng-if="currentUser"><b>Logged in as, {{ currentUser.username }}</b></div> -->
 		<div ui-view></div>
 	</div>
 
