@@ -1,11 +1,7 @@
-state1 state1 state1 state1 state1 state1 state1 state1 state1 
-state1 state1 state1 state1 state1 state1 state1 state1 state1
-state1 state1 state1 state1 state1 state1 state1 state1 state1 
-state1 state1 state1 state1 state1 state1 state1 state1 state1
-state1 state1 state1 state1 state1 state1 state1 state1 state1 
-state1 state1 state1 state1 state1 state1 state1 state1 state1
-state1 state1 state1 state1 state1 state1 state1 state1 state1 
-state1 state1 state1 state1 state1 state1 state1 state1 state1
-state1 state1 state1 state1 state1 state1 state1 state1 state1 
-state1 state1 state1 state1 state1 state1 state1 state1 state1
- 
+<div ng-repeat="show in ruv.results">
+  <h3>{{ show.title }}</h3>
+  <p>Þáttur: {{show.series.episode}}</p>
+  <p>Klukkan: {{show.startTime}}</p>
+  <p>Upplýsingar:</p>
+  <p>{{show.description}}</p>
+</div>
