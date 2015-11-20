@@ -3,7 +3,7 @@ function($stateProvider, $urlRouterProvider, USER_ROLES) {
 
   // For any unmatched url, redirect to /
   $urlRouterProvider.otherwise("/");
-  
+
   // Now set up the states
   $stateProvider
   	.state('home', {
@@ -13,16 +13,16 @@ function($stateProvider, $urlRouterProvider, USER_ROLES) {
           authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor, USER_ROLES.guest]
       }
     })
-  	.state('state1', {
-      url: "/state1",
-      templateUrl: "templates/state1.html",
+  	.state('ruv', {
+      url: "/ruv",
+      templateUrl: "templates/ruv.html",
 	  data: {
           authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
-      }      	  
+      }
     })
-    .state('state2', {
-      url: "/state2",
-      templateUrl: "templates/state2.html",
+    .state('stod2', {
+      url: "/stod2",
+      templateUrl: "templates/stod2.html",
 	  data: {
           authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
       }
