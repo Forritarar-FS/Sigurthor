@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('loginApp').
-controller('ParentController', ['$scope', '$rootScope', '$modal', 'Auth', 'ruv', 'stod2', 'AUTH_EVENTS','USER_ROLES',
-function($scope, $rootScope, $modal, Auth, ruv, stod, AUTH_EVENTS, USER_ROLES){
+controller('ParentController', ['$scope', '$rootScope', '$modal', 'Auth', 'ruv', 'stod2', 'skjar1', 'AUTH_EVENTS','USER_ROLES',
+function($scope, $rootScope, $modal, Auth, ruv, stod2, skjar1, AUTH_EVENTS, USER_ROLES){
 	// this is the parent controller for all controllers.
 	// Manages auth login functions and each controller
 	// inherits from this controller
@@ -12,6 +12,10 @@ function($scope, $rootScope, $modal, Auth, ruv, stod, AUTH_EVENTS, USER_ROLES){
 
 	stod2.success(function(data2){
 		$scope.stod2 = data2;
+	});
+
+	skjar1.success(function(data3){
+		$scope.skjar1 = data3;
 	});
 
 
