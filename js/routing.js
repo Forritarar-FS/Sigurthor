@@ -42,7 +42,7 @@ function($stateProvider, $urlRouterProvider, USER_ROLES) {
       }
     })
     .state('stod2gull', {
-      url: "/stod2",
+      url: "/stod2gull",
       templateUrl: "templates/stod2gull.html",
 	  data: {
           authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
