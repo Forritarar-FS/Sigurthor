@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('loginApp').
-controller('ParentController', ['$scope', '$rootScope', '$modal', 'Auth', 'ruv', 'stod2', 'skjar1', 'AUTH_EVENTS','USER_ROLES',
-function($scope, $rootScope, $modal, Auth, ruv, stod2, skjar1, AUTH_EVENTS, USER_ROLES){
+controller('ParentController', ['$scope', '$rootScope', '$modal', 'Auth', 'ruv', 'ruvithrottir', 'stod2', 'stod2bio', 'stod2gull', 'stod2sport', 'stod2sport2', 'skjar1', 'AUTH_EVENTS','USER_ROLES',
+function($scope, $rootScope, $modal, Auth, ruv, ruvithrottir, stod2, stod2bio, stod2gull, stod2sport, stod2sport2, skjar1, AUTH_EVENTS, USER_ROLES){
 	// this is the parent controller for all controllers.
 	// Manages auth login functions and each controller
 	// inherits from this controller
@@ -10,15 +10,33 @@ function($scope, $rootScope, $modal, Auth, ruv, stod2, skjar1, AUTH_EVENTS, USER
 		$scope.ruv = data;
 	});
 
+	ruvithrottir.success(function(data){
+		$scope.ruvithrottir = data;
+	});
+
 	stod2.success(function(data2){
 		$scope.stod2 = data2;
+	});
+
+	stod2bio.success(function(data){
+		$scope.stod2bio = data;
+	});
+
+	stod2gull.success(function(data){
+		$scope.stod2gull = data;
+	});
+
+	stod2sport.success(function(data){
+		$scope.stod2sport = data;
+	});
+
+	stod2sport2.success(function(data){
+		$scope.stod2sport2 = data;
 	});
 
 	skjar1.success(function(data3){
 		$scope.skjar1 = data3;
 	});
-
-
 
 
 	$scope.modalShown = false;

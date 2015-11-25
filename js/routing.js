@@ -20,9 +20,44 @@ function($stateProvider, $urlRouterProvider, USER_ROLES) {
           authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
       }
     })
+    .state('ruvithrottir', {
+      url: "/ruvithrottir",
+      templateUrl: "templates/ruvithrottir.html",
+	  data: {
+          authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
+      }
+    })
     .state('stod2', {
       url: "/stod2",
       templateUrl: "templates/stod2.html",
+	  data: {
+          authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
+      }
+    })
+    .state('stod2bio', {
+      url: "/stod2bio",
+      templateUrl: "templates/stod2bio.html",
+	  data: {
+          authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
+      }
+    })
+    .state('stod2gull', {
+      url: "/stod2",
+      templateUrl: "templates/stod2gull.html",
+	  data: {
+          authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
+      }
+    })
+    .state('stod2sport', {
+      url: "/stod2sport",
+      templateUrl: "templates/stod2sport.html",
+	  data: {
+          authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
+      }
+    })
+    .state('stod2sport2', {
+      url: "/stod2sport2",
+      templateUrl: "templates/stod2sport2.html",
 	  data: {
           authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor]
       }
