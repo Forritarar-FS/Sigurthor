@@ -14,8 +14,8 @@ function($scope, $rootScope, $modal, Auth, ruv, ruvithrottir, stod2, stod2bio, s
 		$scope.ruvithrottir = data;
 	});
 
-	stod2.success(function(data2){
-		$scope.stod2 = data2;
+	stod2.success(function(data){
+		$scope.stod2 = data;
 	});
 
 	stod2bio.success(function(data){
