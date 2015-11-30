@@ -2,7 +2,7 @@
 <html ng-app="loginApp">
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.min.js"></script>
-<title>Login App</title>
+<title>Islensk Sjonvarpsdagskra</title>
 <link rel="stylesheet" href="css/custom.css">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -21,8 +21,13 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li ng-class="getClass('ruv')"><a ui-sref="ruv">Ruv</a></li>
+					<li ng-class="getClass('ruvithrottir')"><a ui-sref="ruvithrottir">Ruv Ithrottir</a></li>
 					<li ng-class="getClass('stod2')"><a ui-sref="stod2">Stod 2</a></li>
-					<li ng-class="getClass('adminState')"><a ui-sref="adminState">Admin Area</a></li>
+					<li ng-class="getClass('stod2bio')"><a ui-sref="stod2bio">Stod 2 Bio</a></li>
+					<li ng-class="getClass('stod2gull')"><a ui-sref="stod2gull">Stod 2 Gull</a></li>
+					<li ng-class="getClass('stod2sport')"><a ui-sref="stod2sport">Stod 2 Sport</a></li>
+					<li ng-class="getClass('stod2sport2')"><a ui-sref="stod2sport2">Stod 2 Sport 2</a></li>
+					<li ng-class="getClass('skjar1')"><a ui-sref="skjar1">Skjar 1</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a>{{ currentUser.username }}</a></li>
@@ -50,7 +55,13 @@
 	<!--FACTORY -->
 	<script src="services/authInterceptor.js"></script>
 	<script src="services/ruv.js"></script>
+	<script src="services/ruvithrottir.js"></script>
 	<script src="services/stod2.js"></script>
+	<script src="services/stod2bio.js"></script>
+	<script src="services/stod2gull.js"></script>
+	<script src="services/stod2sport.js"></script>
+	<script src="services/stod2sport2.js"></script>
+	<script src="services/skjar1.js"></script>
 
 
 	<!--CONTROLLERS -->
