@@ -1,0 +1,21 @@
+<div ng-if="show.live" class="jumbotron text-center" ng-repeat="show in stod2.results">
+    <div class="alert alert-success" ng-app ng-controller="Ctrl">
+      <h5> Bein útsending <h5>
+    </div>
+    <h3>{{ show.title }}</h3>
+    <p>Klukkan: {{show.startTime}}</p>
+    <p>Upplýsingar:</p>
+    <p>{{show.description}}</p>
+</div>
+
+<div class="alert alert-info text-center" ng-app ng-controller="Ctrl">
+    <h2> Hér fyrir neðan sérðu fulla dagskrá dagsins {{date | date:'dd.MMM yyyy'}}<h2>
+</div>
+
+<div class="jumbotron text-center" ng-repeat="show in stod2.results">
+  <h3>{{ show.title }}</h3>
+  <p>Þáttur: {{show.series.episode}}</p>
+  <p>Klukkan: {{show.startTime}}</p>
+  <p>Upplýsingar:</p>
+  <p>{{show.description}}</p>
+</div>

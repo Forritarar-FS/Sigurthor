@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ng-login
 ========
 
@@ -123,3 +124,18 @@ function($rootScope, $q, Session, AUTH_EVENTS) {
 
 **P.S.2** This code can be easily tweaked by the user, to allow different routes to be seen, or display content that was not meant to be displayed. The logic MUST be implemented server-side, this is just a way to show things properly on your ng-app.
 >>>>>>> 42102c8daeb24def969ef505e0628839c5de10fe
+=======
+Upplýsingar um databaseinn.
+
+database: dbtest
+
+table: users
+
+  user_id int(5) PRIMARY AI
+
+  username varchar(25)
+
+  email varchar(35) UNIQUE
+
+  password varchar(50)
+>>>>>>> 54e2f51701cf181ec979f0b3ffc458d178b3b6fb
